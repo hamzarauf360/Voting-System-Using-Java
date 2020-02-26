@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="600.0" style="-fx-background-color: #ff7f50;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="i150213_ooad_voting_system.Add_nomineeController">
+   <children>
+      <Label layoutX="230.0" layoutY="30.0" text="Add Nominee">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="voter_name" layoutX="218.0" layoutY="123.0" promptText="name" />
+      <TextField fx:id="voter_age" layoutX="218.0" layoutY="170.0" promptText="age" />
+      <TextField fx:id="voter_username" layoutX="218.0" layoutY="229.0" promptText="username" />
+      <TextField fx:id="voter_password" layoutX="218.0" layoutY="279.0" promptText="password" />
+      <TextField fx:id="nominee_name" layoutX="218.0" layoutY="123.0" promptText="name" />
+      <TextField fx:id="nominee_age" layoutX="218.0" layoutY="170.0" promptText="age" />
+      <TextField fx:id="nominee_username" layoutX="218.0" layoutY="229.0" promptText="ID" />
+      <TextField fx:id="nominee_password" layoutX="218.0" layoutY="279.0" promptText="password" />
+      <Label layoutX="90.0" layoutY="127.0" text="Nominee name" />
+      <Label layoutX="90.0" layoutY="174.0" text="Nominee Age" />
+      <Label layoutX="90.0" layoutY="233.0" text="Nominee ID" />
+      <Label layoutX="90.0" layoutY="283.0" text="Nominee password" />
+      <TextField fx:id="nominee_party" layoutX="218.0" layoutY="323.0" promptText="party" />
+      <Label layoutX="103.0" layoutY="327.0" text="party name" />
+      <Button fx:id="nominee_submit_details" layoutX="247.0" layoutY="387.0" mnemonicParsing="false" onAction="#nominee_details_handler" text="Submit details" />
+      <Label fx:id="nominee_invalid_details" layoutX="245.0" layoutY="357.0" />
+   </children>
+</AnchorPane>
